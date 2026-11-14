@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aplikacije — Omer Husović, prof.</title>
+<meta name="description" content="Aplikacije Omera Husovića, prof.: Nastavnik 2 (program za nastavnike) i Merak (radio i muzika za telefon, TV i auto).">
+<link rel="icon" href="nastavnik2.png">
+<style>
+  :root { --poz:#0B1424; --panel:#13213A; --panel2:#1C2E4D; --tekst:#E8EEF7; --sporedni:#93A3BA; --zlatna:#E8B04A; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: "Segoe UI", Roboto, Arial, sans-serif; background: var(--poz); color: var(--tekst); line-height: 1.6; }
+  .omot { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  header { background: radial-gradient(circle at 25% 10%, #1C3E66 0%, var(--poz) 70%); padding: 56px 0 36px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 40px; margin: 0; }
+  h1 i { color: var(--zlatna); font-style: italic; }
+  .podnaslov { color: var(--sporedni); font-size: 18px; margin: 8px 0 0; }
+  .aplikacije { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 30px 0 40px; }
+  a.app { display: flex; flex-direction: column; gap: 14px; background: var(--panel); border-radius: 20px; padding: 24px;
+          text-decoration: none; color: var(--tekst); border: 2px solid transparent; transition: border-color .15s, transform .15s; }
+  a.app:hover { border-color: var(--zlatna); transform: translateY(-2px); }
+  .glava { display: flex; gap: 16px; align-items: center; }
+  .glava img { width: 72px; height: 72px; border-radius: 18px; }
+  .glava b { font-size: 24px; display: block; }
+  .glava span { color: var(--zlatna); font-size: 14px; }
+  .opis { color: var(--sporedni); font-size: 15px; margin: 0; }
+  .oznake { display: flex; gap: 8px; flex-wrap: wrap; }
+  .oznake em { font-style: normal; background: var(--panel2); color: var(--tekst); font-size: 13px; padding: 3px 10px; border-radius: 20px; }
+  .dalje { color: var(--zlatna); font-weight: 700; margin-top: auto; }
+  footer { color: var(--sporedni); font-size: 14px; padding: 24px 0 40px; border-top: 1px solid var(--panel2); }
+</style>
+</head>
+<body>
+<header>
+  <div class="omot">
+    <h1>Aplikacije <i>Omer Husović, prof.</i></h1>
+    <p class="podnaslov">Programi za nastavnike i za slušanje muzike — Windows, Android, televizor i auto.</p>
+  </div>
+</header>
+
+<main class="omot">
+  <div class="aplikacije">
+    <a class="app" href="nastavnik2/">
+      <div class="glava"><img src="nastavnik2.png" alt=""><div><b>Nastavnik 2</b><span>za nastavnike i profesore</span></div></div>
+      <p class="opis">Planovi, raspored, pripreme, ocjene i formativno praćenje, razredništvo, svjedodžbe i e-Dnevnik — jedni podaci za sve.</p>
+      <div class="oznake"><em>Windows</em><em>Android tablet</em><em>Proba 7 dana</em></div>
+      <span class="dalje">Više i preuzimanje →</span>
+    </a>
+    <a class="app" href="merak/">
+      <div class="glava"><img src="merak.png" alt=""><div><b>Merak</b><span>radio i muzika</span></div></div>
+      <p class="opis">Radio stanice iz cijele bivše Jugoslavije, pjesma koja trenutno svira, muzika s telefona na televizoru, Android Auto.</p>
+      <div class="oznake"><em>Android telefon</em><em>Android TV</em><em>Android Auto</em><em>Proba 15 dana</em></div>
+      <span class="dalje">Više i preuzimanje →</span>
+    </a>
+  </div>
+</main>
+
+<footer class="omot">
+  Omer Husović, prof. · kontakt je u svakoj aplikaciji.
+</footer>
+</body>
+</html>
